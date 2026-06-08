@@ -789,3 +789,315 @@ p {
   white-space: nowrap;
   min-width: 220px;
 }
+
+/* === COPYRIGHT FOOTER === */
+.slide-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7em;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.slide-footer span { white-space: nowrap; }
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 1024px) {
+  .slide-cols {
+    flex-direction: column;
+  }
+
+  .col-text {
+    padding: 2.5rem 2rem;
+    flex: none !important;
+    border-right: none !important;
+  }
+
+  .col-visual {
+    flex: none;
+    padding: 1.5rem 2rem;
+  }
+
+  h1 { font-size: 2.4em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.2em; }
+  p { font-size: 1.05em; }
+
+  .title-main { font-size: 2.6em; }
+  .subtitle { font-size: 1.1em; }
+
+  .metric-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .metric-card {
+    padding: 1rem 1.2rem;
+  }
+
+  .metric-card .metric-value {
+    font-size: 1.8em;
+  }
+
+  .compare-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .scenario-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .scenario-label {
+    min-width: unset;
+    font-size: 1em;
+  }
+
+  .scenario-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    width: 100%;
+  }
+
+  .scenario-val .sv-num {
+    font-size: 1.2em;
+  }
+
+  .arch-branches {
+    flex-direction: column;
+  }
+
+  .arch-node {
+    min-width: unset;
+    padding: 0.7rem 1rem;
+    font-size: 0.95em;
+  }
+
+  .data-table {
+    font-size: 0.85em;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .bar-chart {
+    height: 150px;
+    gap: 1rem;
+  }
+
+  .bar-pair {
+    height: 120px;
+  }
+
+  .bar { width: 28px; }
+
+  .hl-result {
+    font-size: 1.05em;
+    padding: 0.8rem 1rem;
+  }
+
+  .funnel-label {
+    min-width: unset;
+    font-size: 0.8em;
+  }
+
+  .funnel-bar {
+    height: 28px;
+  }
+
+  .step-item, .risk-item {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-arrows {
+    padding: 0 1rem 0.8rem;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .slide-footer {
+    padding: 0.5rem 1rem;
+    font-size: 0.6em;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    max-width: 100%;
+  }
+
+  .summary-item {
+    padding: 1rem;
+  }
+
+  .summary-item .si-value {
+    font-size: 1.3em;
+  }
+
+  .slide-center {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .col-text {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .col-visual {
+    padding: 1rem 1.2rem;
+  }
+
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.35em; }
+  p { font-size: 0.95em; }
+
+  .title-main { font-size: 2em; }
+  .subtitle { font-size: 0.95em; }
+  .author-block { font-size: 0.95em; margin-top: 1.5rem; }
+
+  .section-label {
+    font-size: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .metric-card {
+    padding: 0.7rem 0.8rem;
+    border-radius: 10px;
+  }
+
+  .metric-card .metric-label {
+    font-size: 0.7em;
+  }
+
+  .metric-card .metric-value {
+    font-size: 1.4em;
+  }
+
+  .scenario-values {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+
+  .scenario-val .sv-num {
+    font-size: 1em;
+  }
+
+  .scenario-val .sv-label {
+    font-size: 0.65em;
+  }
+
+  .scenario-label {
+    font-size: 0.9em;
+  }
+
+  .compare-block {
+    padding: 1rem;
+  }
+
+  .compare-item {
+    font-size: 0.9em;
+  }
+
+  .data-table {
+    font-size: 0.75em;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .bar-chart {
+    height: 120px;
+    gap: 0.8rem;
+  }
+
+  .bar-pair { height: 90px; }
+  .bar { width: 22px; }
+  .bar-label { font-size: 0.75em; }
+
+  .funnel-label {
+    font-size: 0.7em;
+  }
+
+  .funnel-bar {
+    height: 22px;
+    padding-right: 0.4rem;
+  }
+
+  .funnel-pct {
+    font-size: 0.7em;
+  }
+
+  .risk-title { font-size: 0.95em; }
+  .risk-desc { font-size: 0.8em; }
+  .risk-icon { font-size: 1.2em; width: 30px; }
+
+  .step-title { font-size: 1em; }
+  .step-desc { font-size: 0.85em; }
+  .step-num { width: 32px; height: 32px; font-size: 0.9em; }
+
+  .hl-result {
+    font-size: 0.9em;
+    padding: 0.6rem 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .slide-center {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .slide-center h1 {
+    font-size: 1.6em;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .summary-item {
+    padding: 0.8rem;
+  }
+
+  .summary-item .si-value {
+    font-size: 1.2em;
+  }
+
+  .summary-item .si-value.teal {
+    font-size: 1em !important;
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9em;
+  }
+
+  .gradient-orb {
+    display: none;
+  }
+}
