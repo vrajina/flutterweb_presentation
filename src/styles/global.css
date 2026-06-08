@@ -761,3 +761,46 @@ p {
 }
 
 .slide-dark .section-label { color: var(--ff-teal); }
+
+/* === FUNNEL CHART === */
+.funnel-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.funnel-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.funnel-bar {
+  height: 36px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--ff-blue), var(--ff-bright-blue));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.8rem;
+  min-width: 50px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.funnel-bar.good {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+.funnel-pct {
+  color: var(--ff-white);
+  font-weight: 700;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.funnel-label {
+  font-size: 0.95em;
+  white-space: nowrap;
+  min-width: 220px;
+}
