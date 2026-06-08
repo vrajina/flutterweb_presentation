@@ -28,12 +28,12 @@ import '../styles/global.css';
   </section>
 
   <!-- 2: PROBLEM -->
-  <section class="slide slide-problem-bg">
+  <section class="slide">
     <div class="slide-cols">
       <div class="col-text">
         <p class="section-label">📊 Проблема</p>
-        <h2>67% трафика —<br><span style="color:#dc2626;">44% дохода</span></h2>
-        <p class="dim" style="margin-top:1rem;">Мобильная версия сайта получает основной трафик,<br>но&nbsp;конвертирует в&nbsp;2,6× хуже десктопа.</p>
+        <h2>67% трафика —<br><span style="color:#f87171;">44% дохода</span></h2>
+        <p class="dim" style="margin-top:1rem;">Текущий интерфейс и&nbsp;его адаптив не&nbsp;обеспечивают необходимый<br>для конверсии мобильного трафика опыт.</p>
         <div class="bar-chart">
           <div class="bar-group"><div class="bar-pair"><div class="bar mobile" style="height:134px;"></div><div class="bar desktop" style="height:62px;"></div></div><div class="bar-label">Трафик</div></div>
           <div class="bar-group"><div class="bar-pair"><div class="bar mobile" style="height:48px;"></div><div class="bar desktop" style="height:126px;"></div></div><div class="bar-label">Конверсия</div></div>
@@ -86,16 +86,16 @@ import '../styles/global.css';
           <div class="metric-card"><div class="metric-label">Средний чек</div><div class="metric-value" style="font-size:1.8em;">8 166 ₽</div></div>
           <div class="metric-card"><div class="metric-label">Вещей / заказ</div><div class="metric-value">2,30</div></div>
         </div>
-        <div class="hl-result">Доля моб. версии сайта: 15,9% заказов, 15,6% выручки.<br>При 67% трафика — это разрыв эффективности.</div>
+        <div class="hl-result">Текущий интерфейс и&nbsp;его адаптив не&nbsp;обеспечивают необходимый для конверсии мобильного трафика опыт</div>
       </div>
       <div class="col-visual">
         <div style="text-align:center;">
           <p class="dim" style="font-size:.9em;margin-bottom:1rem;">Итого по всем каналам</p>
-          <p style="font-size:2.5em;font-weight:800;color:var(--ff-blue);">82,1 млн ₽</p>
+          <p style="font-size:2.5em;font-weight:800;color:var(--ff-teal);">82,1 млн ₽</p>
           <p class="dim">9 840 заказов/мес</p>
           <div style="width:200px;height:1px;background:var(--ff-card-border);margin:1.5rem auto;"></div>
           <p class="dim" style="font-size:.85em;">Из них моб. версия сайта:</p>
-          <p style="font-size:2em;font-weight:800;color:#dc2626;">15,6%</p>
+          <p style="font-size:2em;font-weight:800;color:#f87171;">15,6%</p>
           <p class="dim">при 67% трафика</p>
         </div>
       </div>
@@ -103,7 +103,7 @@ import '../styles/global.css';
   </section>
 
   <!-- 5: APP FUNNEL -->
-  <section class="slide slide-solution-bg">
+  <section class="slide">
     <div class="slide-cols">
       <div class="col-text" style="flex:1.3;">
         <p class="section-label">📱 Воронка мобильного приложения · Май 2026</p>
@@ -117,11 +117,11 @@ import '../styles/global.css';
         </div>
         <div class="compare-row" style="margin-top:1.5rem;">
           <div class="compare-block problem" style="text-align:center;">
-            <h3 style="color:#dc2626;font-size:2.5em;margin-bottom:.2rem;">0,75%</h3>
+            <h3 style="color:#f87171;font-size:2.5em;margin-bottom:.2rem;">0,75%</h3>
             <p style="font-size:1em;">Мобильная версия сайта</p>
           </div>
           <div class="compare-block solution" style="text-align:center;">
-            <h3 style="color:var(--ff-blue);font-size:2.5em;margin-bottom:.2rem;">5,03%</h3>
+            <h3 style="color:var(--ff-teal);font-size:2.5em;margin-bottom:.2rem;">5,03%</h3>
             <p style="font-size:1em;">Мобильное приложение</p>
           </div>
         </div>
@@ -130,33 +130,36 @@ import '../styles/global.css';
     </div>
   </section>
 
-  <!-- 6: SOLUTION -->
+  <!-- 6: SOLUTION — 50/50 -->
   <section class="slide">
     <div class="slide-cols">
-      <div class="col-text">
-        <p class="section-label">💡 Решение</p>
-        <h2>Flutter Web —<br>приложение в&nbsp;браузере</h2>
-        <p style="margin-top:1rem;">Единая кодовая база с&nbsp;мобильным приложением в&nbsp;сторах.<br>Нативный мобильный UX вместо адаптивной вёрстки.</p>
-        <div class="compare-row" style="margin-top:1.5rem;">
-          <div class="compare-block problem">
-            <h3 style="color:#dc2626;">✕ Сейчас</h3>
-            <div class="compare-items">
-              <div class="compare-item">Адаптивная вёрстка Битрикс</div>
-              <div class="compare-item">Десктопный UX на мобильном</div>
-              <div class="compare-item">Конверсия 0,75%</div>
-              <div class="compare-item">12,8 млн ₽/мес</div>
-            </div>
-          </div>
-          <div class="compare-block solution">
-            <h3 class="ff-blue">✓ Flutter Web</h3>
-            <div class="compare-items">
-              <div class="compare-item">Нативный мобильный UX</div>
-              <div class="compare-item">Та же база, что в сторах</div>
-              <div class="compare-item">Целевая конверсия ≥ 1,0%</div>
-              <div class="compare-item">Потенциал +38 млн ₽/год</div>
-            </div>
+      <div class="col-text" style="flex:1;border-right:1px solid rgba(255,255,255,0.08);">
+        <p class="section-label" style="color:#f87171;">✕ Проблема</p>
+        <h2 style="color:#f87171;">Медленный фронт<br>на&nbsp;адаптиве Битрикс</h2>
+        <div class="compare-block problem" style="margin-top:1.5rem;">
+          <div class="compare-items">
+            <div class="compare-item">📱 Десктопный UI сжатый под мобильный экран</div>
+            <div class="compare-item">🐌 Тяжёлая вёрстка, медленная загрузка</div>
+            <div class="compare-item">📉 Конверсия 0,75% (vs 1,98% ПК)</div>
+            <div class="compare-item">💸 12,8 млн ₽/мес оформлений</div>
+            <div class="compare-item">💰 ~3,8 млн ₽/мес реальная выручка</div>
           </div>
         </div>
+        <p class="dim" style="margin-top:1rem;font-size:.95em;">Текущий интерфейс и&nbsp;его адаптив не&nbsp;обеспечивают<br>необходимый для конверсии мобильного трафика опыт</p>
+      </div>
+      <div class="col-text" style="flex:1;">
+        <p class="section-label">✓ Решение</p>
+        <h2 style="color:var(--ff-teal);">Flutter Web —<br>приложение в&nbsp;браузере</h2>
+        <div class="compare-block solution" style="margin-top:1.5rem;">
+          <div class="compare-items">
+            <div class="compare-item">⚡ Нативный мобильный UX из сторов</div>
+            <div class="compare-item">🔗 Единая кодовая база с приложением</div>
+            <div class="compare-item">📈 Целевая конверсия ≥ 1,0%</div>
+            <div class="compare-item">💸 +3,2 млн ₽/мес оформлений</div>
+            <div class="compare-item">💰 +960 тыс ₽/мес реальная выручка</div>
+          </div>
+        </div>
+        <div class="hl-result" style="margin-top:1rem;">Потенциал: <strong>+11,5 млн ₽/год</strong> реальной выручки (50% трафика)</div>
       </div>
     </div>
   </section>
@@ -165,39 +168,42 @@ import '../styles/global.css';
   <section class="slide">
     <div class="slide-cols">
       <div class="col-text" style="flex:1.3;">
-        <p class="section-label">💰 Оценка в деньгах · A/B на 50% моб. трафика</p>
-        <h2>Сценарии прироста выручки</h2>
-        <p class="dim" style="margin-top:.5rem;">Базис: 1 568 заказов, 12,8 млн ₽/мес · Ср. чек 8 166 ₽ · 50% трафика = ~784 заказа</p>
+        <p class="section-label">💰 Прогноз · 50% мобильного трафика</p>
+        <h2>Сценарии прироста</h2>
+        <p class="dim" style="margin-top:.5rem;">Базис: 1 568 заказов, 12,8 млн ₽ оформлений/мес · Выручка ≈ 0,3 от оформлений · Ср. чек 8 166 ₽</p>
         <div class="scenario-grid">
           <div class="scenario-row">
-            <div class="scenario-label" style="color:#059669;">🟢 Консерв. (+30% CR)</div>
+            <div class="scenario-label" style="color:#34d399;">🟢 Консерв. (+30%&nbsp;CR)</div>
             <div class="scenario-values">
               <div class="scenario-val"><div class="sv-num">1,0%</div><div class="sv-label">конверсия</div></div>
-              <div class="scenario-val"><div class="sv-num">+235</div><div class="sv-label">заказов/мес</div></div>
-              <div class="scenario-val"><div class="sv-num" style="color:#059669;">+1,9 млн ₽</div><div class="sv-label">в месяц</div></div>
-              <div class="scenario-val"><div class="sv-num" style="color:#059669;">+23 млн ₽</div><div class="sv-label">в год</div></div>
+              <div class="scenario-val"><div class="sv-num">+235</div><div class="sv-label">заказ/мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#34d399;">+1,9 млн</div><div class="sv-label">оформл./мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#34d399;">+570 тыс</div><div class="sv-label">выручка/мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#34d399;">+6,8 млн</div><div class="sv-label">выр./год</div></div>
             </div>
           </div>
           <div class="scenario-row highlight">
-            <div class="scenario-label" style="color:var(--ff-blue);">🔵 Реалист. (+50% CR)</div>
+            <div class="scenario-label" style="color:var(--ff-teal);">🔵 Реалист. (+50%&nbsp;CR)</div>
             <div class="scenario-values">
               <div class="scenario-val"><div class="sv-num">1,13%</div><div class="sv-label">конверсия</div></div>
-              <div class="scenario-val"><div class="sv-num">+392</div><div class="sv-label">заказов/мес</div></div>
-              <div class="scenario-val"><div class="sv-num">+3,2 млн ₽</div><div class="sv-label">в месяц</div></div>
-              <div class="scenario-val"><div class="sv-num" style="color:var(--ff-blue);">+38 млн ₽</div><div class="sv-label">в год</div></div>
+              <div class="scenario-val"><div class="sv-num">+392</div><div class="sv-label">заказ/мес</div></div>
+              <div class="scenario-val"><div class="sv-num">+3,2 млн</div><div class="sv-label">оформл./мес</div></div>
+              <div class="scenario-val"><div class="sv-num">+960 тыс</div><div class="sv-label">выручка/мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:var(--ff-teal);">+11,5 млн</div><div class="sv-label">выр./год</div></div>
             </div>
           </div>
           <div class="scenario-row">
-            <div class="scenario-label" style="color:#d97706;">🟡 Оптимист. (+100% CR)</div>
+            <div class="scenario-label" style="color:#fbbf24;">🟡 Оптимист. (+100%&nbsp;CR)</div>
             <div class="scenario-values">
               <div class="scenario-val"><div class="sv-num">1,50%</div><div class="sv-label">конверсия</div></div>
-              <div class="scenario-val"><div class="sv-num">+784</div><div class="sv-label">заказов/мес</div></div>
-              <div class="scenario-val"><div class="sv-num" style="color:#d97706;">+6,4 млн ₽</div><div class="sv-label">в месяц</div></div>
-              <div class="scenario-val"><div class="sv-num" style="color:#d97706;">+77 млн ₽</div><div class="sv-label">в год</div></div>
+              <div class="scenario-val"><div class="sv-num">+784</div><div class="sv-label">заказ/мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#fbbf24;">+6,4 млн</div><div class="sv-label">оформл./мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#fbbf24;">+1,9 млн</div><div class="sv-label">выручка/мес</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#fbbf24;">+23 млн</div><div class="sv-label">выр./год</div></div>
             </div>
           </div>
         </div>
-        <div class="hl-result">При раскатке на 100% трафика: <strong>+38–77 млн ₽/год</strong> (реалист.–оптимист.)</div>
+        <div class="hl-result">При раскатке на 100%: <strong>+23–46 млн ₽/год</strong> реальной выручки</div>
       </div>
     </div>
   </section>
@@ -241,16 +247,16 @@ import '../styles/global.css';
   </section>
 
   <!-- 10: ROADMAP -->
-  <section class="slide slide-solution-bg">
+  <section class="slide">
     <div class="slide-cols">
       <div class="col-text">
         <p class="section-label">🚀 План запуска</p>
-        <h2>Поэтапный роадмап</h2>
+        <h2>Агрессивный роадмап</h2>
         <div class="step-list">
-          <div class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Замер производительности</div><div class="step-desc">FCP на реальных устройствах (бюджетный Android, 4G). Go/No-Go</div></div></div>
-          <div class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Запуск на 10–20% трафика</div><div class="step-desc">Бот-детекция, consistent bucketing, мониторинг</div></div></div>
-          <div class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">A/B-тест 4 недели</div><div class="step-desc">Primary: конверсия в заказ. Secondary: ср. чек, bounce, глубина</div></div></div>
-          <div class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Go/No-Go: конверсия &gt; 1,0%</div><div class="step-desc">Раскатка 50% → 100%</div></div></div>
+          <div class="step-item"><div class="step-num">1</div><div class="step-content"><div class="step-title">Замер производительности</div><div class="step-desc">FCP на&nbsp;бюджетных Android (4G). Если ≤ 3 сек — Go</div></div></div>
+          <div class="step-item"><div class="step-num">2</div><div class="step-content"><div class="step-title">Запуск на 50% мобильного трафика</div><div class="step-desc">Бот-детекция, consistent bucketing по&nbsp;session ID, мониторинг в&nbsp;реалтайме</div></div></div>
+          <div class="step-item"><div class="step-num">3</div><div class="step-content"><div class="step-title">A/B-тест — 1 месяц</div><div class="step-desc">Primary: конверсия в&nbsp;заказ. Secondary: ср.&nbsp;чек, bounce, глубина, выручка</div></div></div>
+          <div class="step-item"><div class="step-num">4</div><div class="step-content"><div class="step-title">Раскатка на 100%</div><div class="step-desc">Если конверсия ≥ 1,0% → полная раскатка. Адаптив Битрикс уходит</div></div></div>
         </div>
       </div>
     </div>
@@ -260,13 +266,13 @@ import '../styles/global.css';
   <section class="slide slide-dark">
     <div class="slide-center">
       <p class="section-label">Резюме</p>
-      <h1 style="color:var(--ff-white);font-size:2.6em;">Flutter Web =<br><span class="title-accent">+38 млн ₽/год</span></h1>
-      <p style="color:rgba(255,255,255,.6);margin-top:.8rem;">реалистичный сценарий · 50% мобильного трафика</p>
+      <h1 style="color:var(--ff-white);font-size:2.6em;">Flutter Web =<br><span class="title-accent">+11,5 млн ₽/год выручки</span></h1>
+      <p style="color:rgba(255,255,255,.6);margin-top:.8rem;">реалистичный сценарий · 50% мобильного трафика · выручка = 0,3 от оформлений</p>
       <div class="summary-grid">
-        <div class="summary-item"><div class="si-label">Моб. веб сейчас</div><div class="si-value">0,75%</div></div>
-        <div class="summary-item"><div class="si-label">Приложение</div><div class="si-value teal">5,03%</div></div>
-        <div class="summary-item"><div class="si-label">Моб. выручка/мес</div><div class="si-value">12,8 млн ₽</div></div>
-        <div class="summary-item"><div class="si-label">Δ при раскатке 100%</div><div class="si-value green">+77 млн ₽/год</div></div>
+        <div class="summary-item"><div class="si-label">Конверсия сейчас</div><div class="si-value">0,75%</div></div>
+        <div class="summary-item"><div class="si-label">Конверсия приложения</div><div class="si-value teal">5,03%</div></div>
+        <div class="summary-item"><div class="si-label">Δ выручка/мес (50%)</div><div class="si-value green">+960 тыс ₽</div></div>
+        <div class="summary-item"><div class="si-label">Δ при раскатке 100%</div><div class="si-value green">+23 млн ₽/год</div></div>
         <div class="summary-item full"><div class="si-label">Главный аргумент</div><div class="si-value teal" style="font-size:1.1em;">Приложение конвертирует в 6,7× лучше — та же кодовая база</div></div>
       </div>
       <div class="gradient-orb teal" style="width:500px;height:500px;top:-20%;right:-10%;position:absolute;"></div>
