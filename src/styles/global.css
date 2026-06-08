@@ -16,7 +16,7 @@
   --ff-black: #000000;
   --ff-dark-gray: #333033;
   --ff-light-gray: #E2E2E2;
-  --ff-bg: #080e2a;
+  --ff-bg: #0D1FC1;
   --ff-text: #f0f2ff;
   --ff-text-dim: rgba(255,255,255,0.5);
   --ff-card-bg: rgba(255,255,255,0.05);
@@ -48,7 +48,7 @@ html, body {
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #080e2a 0%, #0c1545 40%, #111d6b 100%);
+  background: linear-gradient(135deg, var(--ff-blue) 0%, var(--ff-blue-dark) 50%, #1a0a4e 100%);
   color: var(--ff-text);
 }
 
