@@ -1,0 +1,297 @@
+---
+import '../styles/global.css';
+---
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flutter Web: потенциал мобильного трафика — FINN FLARE</title>
+</head>
+<body>
+<div class="nav-progress"></div>
+<div class="slides-track">
+
+  <!-- 1: TITLE -->
+  <section class="slide slide-title-bg">
+    <div class="slide-cols">
+      <div class="col-text">
+        <p class="section-label">Аналитика · Июнь 2026</p>
+        <h1 class="title-main">FLUTTER WEB:<br><span class="title-accent">ПОТЕНЦИАЛ<br>МОБИЛЬНОГО<br>ТРАФИКА</span></h1>
+        <p class="subtitle">Оценка перехода с&nbsp;адаптивной вёрстки<br>на&nbsp;нативное веб&#8209;приложение</p>
+        <div class="author-block">FINN&nbsp;FLARE · E&#8209;commerce</div>
+      </div>
+      <div class="col-visual" style="position:relative;">
+        <div class="gradient-orb teal" style="width:400px;height:400px;top:10%;right:-10%;position:absolute;"></div>
+        <div class="gradient-orb blue" style="width:300px;height:300px;bottom:10%;left:10%;position:absolute;opacity:0.2;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2: PROBLEM -->
+  <section class="slide slide-problem-bg">
+    <div class="slide-cols">
+      <div class="col-text">
+        <p class="section-label">📊 Проблема</p>
+        <h2>65% трафика —<br><span style="color:#dc2626;">43% дохода</span></h2>
+        <p class="dim" style="margin-top:1rem;">Мобильная версия сайта получает основной трафик,<br>но&nbsp;конвертирует значительно хуже десктопа.</p>
+        <div class="bar-chart">
+          <div class="bar-group"><div class="bar-pair"><div class="bar mobile" style="height:130px;"></div><div class="bar desktop" style="height:66px;"></div></div><div class="bar-label">Трафик</div></div>
+          <div class="bar-group"><div class="bar-pair"><div class="bar mobile" style="height:62px;"></div><div class="bar desktop" style="height:100px;"></div></div><div class="bar-label">Конверсия</div></div>
+          <div class="bar-group"><div class="bar-pair"><div class="bar mobile" style="height:86px;"></div><div class="bar desktop" style="height:112px;"></div></div><div class="bar-label">Доход</div></div>
+        </div>
+        <div class="bar-legend"><span><span class="dot mob"></span> Смартфоны</span><span><span class="dot desk"></span> ПК</span></div>
+      </div>
+      <div class="col-visual">
+        <div class="metric-grid" style="width:100%;">
+          <div class="metric-card danger"><div class="metric-label">Конверсия моб.</div><div class="metric-value">0,62%</div></div>
+          <div class="metric-card success"><div class="metric-label">Конверсия ПК</div><div class="metric-value">1,50%</div></div>
+          <div class="metric-card"><div class="metric-label">Разрыв</div><div class="metric-value accent" style="color:var(--ff-blue);">2,4×</div></div>
+          <div class="metric-card"><div class="metric-label">Упущенный потенциал</div><div class="metric-value" style="color:var(--ff-blue);font-size:1.6em;">десятки млн ₽/год</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3: METRICS GAP -->
+  <section class="slide">
+    <div class="slide-cols">
+      <div class="col-text" style="flex:1.2;">
+        <p class="section-label">📉 Детализация разрыва</p>
+        <h2>Мобильный веб проигрывает<br>по&nbsp;всем метрикам</h2>
+        <table class="data-table" style="margin-top:1.5rem;">
+          <thead><tr><th>Метрика</th><th>📱 Смартфоны</th><th>🖥 ПК</th><th>Разрыв</th></tr></thead>
+          <tbody>
+            <tr><td>Конверсия</td><td><strong>0,62%</strong></td><td><strong>1,50%</strong></td><td class="val-down">ПК в 2,4× лучше</td></tr>
+            <tr><td>Отказы</td><td>20,65%</td><td>14,04%</td><td class="val-down">Моб. +47%</td></tr>
+            <tr><td>Глубина просмотра</td><td>3,24</td><td>3,99</td><td class="val-down">ПК +23%</td></tr>
+            <tr><td>Время на сайте</td><td>2:47</td><td>4:10</td><td class="val-down">ПК +50%</td></tr>
+            <tr><td>Доля дохода</td><td>43%</td><td>56%</td><td class="val-down">При 33% трафика</td></tr>
+          </tbody>
+        </table>
+        <p class="dim" style="margin-top:1rem;font-size:1em;">Источник: Яндекс.Метрика, W23 2026. 33 329 посетителей (моб.), 16 706 (ПК).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4: CURRENT STATE -->
+  <section class="slide">
+    <div class="slide-cols">
+      <div class="col-text">
+        <p class="section-label">📋 Текущее состояние</p>
+        <h2>Мобильная версия сайта<br><span class="dim" style="font-size:0.85em;">Адаптивная вёрстка десктопного сайта</span></h2>
+        <div class="metric-grid" style="margin-top:2rem;">
+          <div class="metric-card"><div class="metric-label">Заказов / неделя</div><div class="metric-value">295</div></div>
+          <div class="metric-card"><div class="metric-label">Выручка / неделя</div><div class="metric-value" style="font-size:1.8em;">2,28 млн ₽</div></div>
+          <div class="metric-card"><div class="metric-label">Средний чек</div><div class="metric-value" style="font-size:1.8em;">7 730 ₽</div></div>
+          <div class="metric-card"><div class="metric-label">Вещей / заказ</div><div class="metric-value">2,06</div></div>
+        </div>
+        <div class="hl-result" style="margin-top:2rem;">
+          Адаптивная вёрстка не&nbsp;обеспечивает опыт, необходимый для конверсии мобильного трафика
+        </div>
+      </div>
+      <div class="col-visual">
+        <div style="text-align:center;">
+          <div style="font-size:6em;margin-bottom:1rem;">📱</div>
+          <p style="font-size:1.3em;font-weight:700;color:var(--ff-blue);">33 329</p>
+          <p class="dim">посетителей/нед</p>
+          <div style="margin-top:2rem;font-size:3em;">→</div>
+          <p style="font-size:1.3em;font-weight:700;color:#dc2626;margin-top:0.5rem;">0,62%</p>
+          <p class="dim">конверсия</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5: SOLUTION -->
+  <section class="slide slide-solution-bg">
+    <div class="slide-cols">
+      <div class="col-text">
+        <p class="section-label">💡 Решение</p>
+        <h2>Flutter Web —<br>приложение в&nbsp;браузере</h2>
+        <p style="margin-top:1rem;">Та&nbsp;же кодовая база, что в&nbsp;мобильном приложении.<br>Адаптировано под Android.</p>
+        <div class="compare-row" style="margin-top:2rem;">
+          <div class="compare-block problem">
+            <h3 style="color:#dc2626;">✕ Сейчас</h3>
+            <div class="compare-items">
+              <div class="compare-item">Адаптивная вёрстка Битрикс</div>
+              <div class="compare-item">Десктопный UX на&nbsp;мобильном экране</div>
+              <div class="compare-item">Конверсия 0,62%</div>
+            </div>
+          </div>
+          <div class="compare-block solution">
+            <h3 class="ff-blue">✓ Flutter Web</h3>
+            <div class="compare-items">
+              <div class="compare-item">Нативный мобильный UX</div>
+              <div class="compare-item">Единая кодовая база со&nbsp;сторами</div>
+              <div class="compare-item">Целевая конверсия ≥1,0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6: POTENTIAL -->
+  <section class="slide">
+    <div class="slide-cols">
+      <div class="col-text" style="flex:1.3;">
+        <p class="section-label">💰 Оценка потенциала</p>
+        <h2>A/B-тест на&nbsp;50% мобильного трафика</h2>
+        <p class="dim" style="margin-top:0.5rem;">~16 665 посетителей/нед · Текущая база: 148 заказов из&nbsp;тестового сегмента</p>
+        <div class="scenario-grid">
+          <div class="scenario-row">
+            <div class="scenario-label" style="color:#059669;">🟢 Консервативный</div>
+            <div class="scenario-values">
+              <div class="scenario-val"><div class="sv-num">0,88%</div><div class="sv-label">конверсия</div></div>
+              <div class="scenario-val"><div class="sv-num">+62</div><div class="sv-label">заказов/нед</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#059669;">+479 тыс ₽</div><div class="sv-label">выручка/нед</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#059669;">~24,9 млн ₽</div><div class="sv-label">в год</div></div>
+            </div>
+          </div>
+          <div class="scenario-row highlight">
+            <div class="scenario-label" style="color:var(--ff-blue);">🟡 Реалистичный</div>
+            <div class="scenario-values">
+              <div class="scenario-val"><div class="sv-num">1,02%</div><div class="sv-label">конверсия</div></div>
+              <div class="scenario-val"><div class="sv-num">+94</div><div class="sv-label">заказов/нед</div></div>
+              <div class="scenario-val"><div class="sv-num">+727 тыс ₽</div><div class="sv-label">выручка/нед</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:var(--ff-blue);">~37,8 млн ₽</div><div class="sv-label">в год</div></div>
+            </div>
+          </div>
+          <div class="scenario-row">
+            <div class="scenario-label" style="color:#d97706;">🔴 Оптимистичный</div>
+            <div class="scenario-values">
+              <div class="scenario-val"><div class="sv-num">1,15%</div><div class="sv-label">конверсия</div></div>
+              <div class="scenario-val"><div class="sv-num">+125</div><div class="sv-label">заказов/нед</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#d97706;">+966 тыс ₽</div><div class="sv-label">выручка/нед</div></div>
+              <div class="scenario-val"><div class="sv-num" style="color:#d97706;">~50,2 млн ₽</div><div class="sv-label">в год</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="hl-result">При раскатке на&nbsp;100% мобильного трафика потенциал: ~50–100 млн ₽/год</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7: ARCHITECTURE -->
+  <section class="slide">
+    <div class="slide-cols">
+      <div class="col-text" style="flex:1.3;">
+        <p class="section-label">🏗 Архитектура</p>
+        <h2>SEO сохранён —<br>Битрикс под капотом</h2>
+        <div class="arch-diagram">
+          <div class="arch-node user">📱 Мобильный пользователь</div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-node cdn">CDN / Reverse Proxy</div>
+          <div class="arch-arrow">↓ ↓ ↓</div>
+          <div class="arch-branches">
+            <div class="arch-branch">
+              <div class="arch-node bot">🤖 Бот-краулер</div>
+              <div class="arch-badge seo">SEO safe</div>
+              <div class="arch-node bitrix">Битрикс HTML</div>
+            </div>
+            <div class="arch-branch">
+              <div class="arch-node flutter">⚡ Тест 50%</div>
+              <div class="arch-badge test">A/B</div>
+              <div class="arch-node flutter">Flutter Web</div>
+            </div>
+            <div class="arch-branch">
+              <div class="arch-node bitrix">📄 Контроль 50%</div>
+              <div class="arch-badge ok">baseline</div>
+              <div class="arch-node bitrix">Битрикс HTML</div>
+            </div>
+          </div>
+        </div>
+        <p class="dim" style="margin-top:1rem;font-size:0.95em;text-align:center;">URL→экран перелинковка обеспечивает deep&nbsp;linking из&nbsp;рекламы, рассылок и&nbsp;SEO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8: RISKS -->
+  <section class="slide">
+    <div class="slide-cols">
+      <div class="col-text" style="flex:1.3;">
+        <p class="section-label">⚠️ Риски</p>
+        <h2>Матрица рисков и&nbsp;митигация</h2>
+        <div class="risk-list">
+          <div class="risk-item">
+            <div class="risk-icon">⚡</div>
+            <div class="risk-content"><div class="risk-title">Вес бандла Flutter Web (2–5 МБ)</div><div class="risk-desc">Замерить FCP на&nbsp;бюджетных Android до&nbsp;запуска. Если &gt;3 сек — оптимизировать lazy&nbsp;loading</div></div>
+            <div class="risk-badge high">Высокий</div>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon">📱</div>
+            <div class="risk-content"><div class="risk-title">Бюджетные Android-устройства</div><div class="risk-desc">Flutter Web тяжелее по&nbsp;CPU/RAM. Нагрузочное тестирование обязательно</div></div>
+            <div class="risk-badge mid">Средний</div>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon">🔄</div>
+            <div class="risk-content"><div class="risk-title">Каннибализация приложения</div><div class="risk-desc">Баннер «Установи приложение → бонус» внутри Flutter Web</div></div>
+            <div class="risk-badge mid">Средний</div>
+          </div>
+          <div class="risk-item">
+            <div class="risk-icon">🔗</div>
+            <div class="risk-content"><div class="risk-title">Битые ссылки URL↔экран</div><div class="risk-desc">Единая таблица маршрутизации, автотесты на&nbsp;404</div></div>
+            <div class="risk-badge low">Низкий</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9: ROADMAP -->
+  <section class="slide slide-solution-bg">
+    <div class="slide-cols">
+      <div class="col-text">
+        <p class="section-label">🚀 План запуска</p>
+        <h2>Поэтапный роадмап</h2>
+        <div class="step-list">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-content"><div class="step-title">Замер производительности</div><div class="step-desc">FCP на&nbsp;реальных устройствах (бюджетный Android, 4G). Go/No-Go точка</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-content"><div class="step-title">Запуск на&nbsp;10–20% трафика</div><div class="step-desc">Бот-детекция, consistent bucketing по&nbsp;session ID, мониторинг метрик</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-content"><div class="step-title">A/B-тест 4 недели</div><div class="step-desc">Primary: конверсия в&nbsp;заказ. Secondary: ср.&nbsp;чек, bounce, глубина</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-content"><div class="step-title">Go/No-Go: конверсия &gt; 0,80%</div><div class="step-desc">Если закрытие ≥20% гэпа — раскатка на&nbsp;50%, затем 100%</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10: SUMMARY -->
+  <section class="slide slide-dark">
+    <div class="slide-center">
+      <p class="section-label">Резюме</p>
+      <h1 style="color:var(--ff-white);font-size:2.8em;">Flutter Web =<br><span class="title-accent">+37,8 млн ₽/год</span></h1>
+      <p style="color:rgba(255,255,255,0.6);margin-top:1rem;">реалистичный сценарий · 50% мобильного трафика</p>
+      <div class="summary-grid">
+        <div class="summary-item"><div class="si-label">Проблема</div><div class="si-value">0,62% конверсия</div></div>
+        <div class="summary-item"><div class="si-label">Цель</div><div class="si-value teal">≥ 1,0%</div></div>
+        <div class="summary-item"><div class="si-label">Δ выручки/нед</div><div class="si-value green">+727 тыс ₽</div></div>
+        <div class="summary-item"><div class="si-label">При 100% раскатке</div><div class="si-value teal">~75 млн ₽/год</div></div>
+        <div class="summary-item full"><div class="si-label">Главный риск</div><div class="si-value" style="font-size:1.2em;">Производительность бандла на бюджетных Android</div></div>
+      </div>
+      <div class="gradient-orb teal" style="width:500px;height:500px;top:-20%;right:-10%;position:absolute;"></div>
+      <div class="gradient-orb blue" style="width:400px;height:400px;bottom:-20%;left:-5%;position:absolute;"></div>
+    </div>
+  </section>
+
+</div>
+
+<div class="nav-arrows">
+  <button class="nav-btn nav-prev hidden" aria-label="Предыдущий слайд">◀</button>
+  <div class="nav-counter"><span class="nav-counter-current">1</span> / <span class="nav-counter-total">10</span></div>
+  <button class="nav-btn nav-next" aria-label="Следующий слайд">▶</button>
+</div>
+
+<script is:inline src="/slides.js"></script>
+</body>
+</html>

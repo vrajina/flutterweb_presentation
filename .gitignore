@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# astro
+dist/
+.astro/
+
+# env
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
