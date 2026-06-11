@@ -42,8 +42,16 @@ li strong{color:#fff}
 .flow-step .step-num{display:block;font-size:.75rem;color:var(--accent2);font-weight:700;margin-bottom:4px}
 .flow-arrow{color:var(--accent);font-size:1.2rem;flex:0}
 .checklist{list-style:none;padding-left:0}
-.checklist li{padding:8px 12px;background:var(--surface);margin:6px 0;border-radius:8px;border-left:3px solid var(--border)}
-.checklist li::before{content:"☐ ";color:var(--accent2)}
+.checklist li{padding:0;margin:6px 0;background:none}
+.checklist label{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--surface);border-radius:8px;border-left:3px solid var(--border);cursor:pointer;transition:all .25s ease;user-select:none}
+.checklist label:hover{background:var(--surface2);border-left-color:var(--accent)}
+.checklist input[type=checkbox]{display:none}
+.checklist .checkmark{width:22px;height:22px;border-radius:6px;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .25s ease;font-size:14px;color:transparent}
+.checklist input:checked~.checkmark{background:var(--green);border-color:var(--green);color:#fff}
+.checklist .check-text{transition:all .25s ease}
+.checklist input:checked~.check-text{text-decoration:line-through;color:var(--text2)}
+.checklist input:checked~.checkmark+.check-text+*{opacity:.6}
+.checklist label:has(input:checked){border-left-color:var(--green)}
 .tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:600;margin:2px}
 .tag-green{background:rgba(52,211,153,.15);color:var(--green)}
 .tag-yellow{background:rgba(251,191,36,.15);color:var(--yellow)}
@@ -193,12 +201,12 @@ li strong{color:#fff}
 </ol>
 
 <h3>Чеклист подготовки Figma-файлов для дизайнеров</h3>
-<ul class="checklist">
-  <li>Все компоненты используют Auto Layout</li>
-  <li>Цвета, отступы, шрифты — через Variables (не захардкожены)</li>
-  <li>Слои названы семантически (<code>ProductCard</code>, не <code>Frame 47</code>)</li>
-  <li>Компоненты переиспользуемые, с вариантами</li>
-  <li>Группировка отражает логическую структуру UI</li>
+<ul class="checklist" id="figma-checklist">
+  <li><label><input type="checkbox" data-key="cl-1"><span class="checkmark">✓</span><span class="check-text">Все компоненты используют Auto Layout</span></label></li>
+  <li><label><input type="checkbox" data-key="cl-2"><span class="checkmark">✓</span><span class="check-text">Цвета, отступы, шрифты — через Variables (не захардкожены)</span></label></li>
+  <li><label><input type="checkbox" data-key="cl-3"><span class="checkmark">✓</span><span class="check-text">Слои названы семантически (<code>ProductCard</code>, не <code>Frame 47</code>)</span></label></li>
+  <li><label><input type="checkbox" data-key="cl-4"><span class="checkmark">✓</span><span class="check-text">Компоненты переиспользуемые, с вариантами</span></label></li>
+  <li><label><input type="checkbox" data-key="cl-5"><span class="checkmark">✓</span><span class="check-text">Группировка отражает логическую структуру UI</span></label></li>
 </ul>
 
 <h3>Этапы внедрения</h3>
@@ -224,5 +232,12 @@ li strong{color:#fff}
 </div>
 
 </div>
+<script>
+document.querySelectorAll('.checklist input[type=checkbox]').forEach(cb=>{
+  const k='figma_cl_'+cb.dataset.key;
+  cb.checked=localStorage.getItem(k)==='1';
+  cb.addEventListener('change',()=>localStorage.setItem(k,cb.checked?'1':'0'));
+});
+</script>
 </body>
 </html>
